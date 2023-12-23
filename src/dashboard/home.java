@@ -224,6 +224,11 @@ public class home extends javax.swing.JFrame {
         buttonGroup1.add(jToggleButton1);
         jToggleButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jToggleButton1.setText("Dashboard");
+        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -302,6 +307,12 @@ public class home extends javax.swing.JFrame {
         staff_panel staffp=new staff_panel();
         jpload.jPanelLoader(panel_load, staffp);
     }//GEN-LAST:event_jToggleButton9ActionPerformed
+
+    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
+        dashboard dash=new dashboard();
+        jpload.jPanelLoader(panel_load, dash);
+
+    }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     /**
      * @param args the command line arguments
